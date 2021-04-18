@@ -1,0 +1,46 @@
+<h1>Dragon Ball Z</h1>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- personajes de color amarillo son del mainpage -->
+        <app-personajes ></app-personajes>
+
+        <!--<h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor= "let personaje of personajes">
+                {{personaje.nombre}} - {{personaje.poder | number}}
+            </li>
+        </ul>-->
+    </div>
+    <div class="col">
+            <!--[personajes] = "personajes"-->
+        <app-agregar 
+            [nuevo] = "nuevo"></app-agregar>
+        <!-- <h3>Agregar <small> {{nuevo.nombre}}</small> </h3>
+        <hr>-->
+<!-- 
+        <form (ngSubmit)="agregar()">-->
+                <!-- [value] Para establecer una propiedad al objeto(input)-->
+                <!-- [(value)] Escuchar y emitir el evento utilizando ngmodel donde interesa que caiga en la propiedad nuevo.nombre-->
+            <!--<input 
+                type="text" 
+                placeholder="Nombre"
+                name= "nombre"
+                [(ngModel)]="nuevo.nombre"
+                />-->
+            <!-- [value]="nuevo.nombre"
+            (input) = "cambiarNombre($event)" -->
+            <!--<input 
+                type="text" 
+                placeholder="Poder"
+                name = "poder"
+                [(ngModel)]="nuevo.poder"
+                
+                />
+            <button type="submit">Agregar</button>
+        </form> -->
+    </div>
+</div>
